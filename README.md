@@ -35,7 +35,12 @@ Funcitons `load_vgg`, `layers`, `optimize` and `train_nn` pass tests successfull
   * Dropout was used in order to prevent overfitting. `keep_prob` value was chosen to be `0.75`.
   * Another technique that was used for overfitting prevention is L2 regularisation. Importantly, it should be included in both layer declarations and loss function:
     * in layers:
-      _add code listing_
+      ```python
+      ...
+      out = tf.layers.conv2d_transpose(out, num_classes, (16, 16), 8, padding="same", 
+                                     kernel_regularizer=tf.contrib.layers.l2_regularizer(0.001))
+      ...
+      ```
     * in loss function: 
       ```python
       reg_losses = tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES)
