@@ -1,3 +1,9 @@
+[image1]: ./pics/1.png
+[image2]: ./pics/2.png
+[image3]: ./pics/3.png
+[image4]: ./pics/4.png
+[image5]: ./pics/5.png
+
 # CarND_Term3_P2
 Image Segmentation Project
 
