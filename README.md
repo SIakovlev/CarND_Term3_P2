@@ -60,7 +60,6 @@ Funcitons `load_vgg`, `layers`, `optimize` and `train_nn` pass tests successfull
     vgg_layer4_out_scaled = tf.multiply(vgg_layer4_out, 0.01, name='pool4_out_scaled')
     ```
 * Does the project correctly labels the road?
-  * 
   <p float="left">
     <img src="/pics/1.png" width="270" />
     <img src="/pics/2.png" width="270" /> 
@@ -71,6 +70,7 @@ Funcitons `load_vgg`, `layers`, `optimize` and `train_nn` pass tests successfull
     <img src="/pics/5.png" width="270" /> 
     <img src="/pics/6.png" width="270" />
   </p>
-  * A solution that is close to best would label at least 80% of the road and label no more than 20% of non-road pixels as road. _specify test set IoU accuracy_
+* A solution that is close to best would label at least 80% of the road and label no more than 20% of non-road pixels as road. 
+  This can be estimated roughly by looking at the results after running the code.
 
 
