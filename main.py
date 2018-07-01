@@ -171,7 +171,7 @@ def run():
     models_dir = './models'
     tests.test_for_kitti_dataset(data_dir)
 
-    EPOCHS = 150
+    EPOCHS = 100
     BATCH_SIZE = 16
     learning_rate = tf.placeholder(tf.float32)
     correct_label = tf.placeholder(tf.float32, [None, None, None, num_classes])
